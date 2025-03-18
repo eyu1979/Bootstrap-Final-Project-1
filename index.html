@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Final Project 1</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @media (min-width: 992px) {
+            .navbar-nav {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .navbar-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .navbar-collapse {
+            flex-grow: 0;
+        }
+
+        .carousel-inner{
+            padding-top: 55px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><strong>Edwin M. Yu</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="video.html">Video</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      My Interest
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=7Ron6MN45LY&t=3s" target="_blank">Rubik's Cube</a></li>
+                      <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=sCJcd6FKWAc" target="_blank">Pyraminx</a></li>
+                      <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=oVRooYDvRqg" target="_blank">Megaminx</a></li>
+                      </ul>
+                  </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Carousel -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/banner1.jpg" class="d-block w-100" alt="Project 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Full-Stack Mastery Starts Here!</h5>
+                <p>Learn, Develop, Succeed!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/banner2.jpg" class="d-block w-100" alt="Project 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Front-End to Back-End</h5>
+                <p>Build the Web with Confidence!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/banner3.jpg" class="d-block w-100" alt="Project 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Become a Full-Stack Pro </h5>
+                <p>Code, Create, Conquer!</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- Navigation Links -->
+<section class="py-5 bg-light text-dark">
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Quick Links</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <h5>Tutorials</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.w3schools.com/html/default.asp" target="_blank" class="text-decoration-none">HTML Tutorial</a></li>
+                <li><a href="https://www.w3schools.com/css/default.asp" target="_blank" class="text-decoration-none">CSS Tutorial</a></li>
+                <li><a href="https://www.w3schools.com/js/default.asp" target="_blank" class="text-decoration-none">JavaScript Tutorial</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h5>Refferences</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.w3schools.com/sql/sql_ref_keywords.asp" target="_blank"  class="text-decoration-none">SQL Reference</a></li>
+                <li><a href="https://www.w3schools.com/python/python_reference.asp" target="_blank" class="text-decoration-none">Python Reference</a></li>
+                <li><a href="https://www.w3schools.com/bootstrap/bootstrap_ref_all_classes.asp" target="_blank" class="text-decoration-none">Bootstrap Reference</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h5>Examples</h5>
+            <ul class="list-unstyled">
+                <li><a href="https://www.w3schools.com/php/php_examples.asp" target="_blank" class="text-decoration-none">PHP Examples</a></li>
+                <li><a href="https://www.w3schools.com/java/java_examples.asp" target="_blank" class="text-decoration-none">Java Examples</a></li>
+                <li><a href="https://www.w3schools.com/jquery/jquery_examples.asp" target="_blank" class="text-decoration-none">jQuery Examples</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <p>Developed by EDWIN M. YU &copy; 2025 All Rights Reserved</p>
+    <p>Follow me on 
+        <a href="#" class="text-white">LinkedIn</a>, 
+        <a href="#" class="text-white">GitHub</a>, 
+        <a href="#" class="text-white">Twitter</a>
+    </p>
+</footer>
+
+<!-- Bootstrap 5.3 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
